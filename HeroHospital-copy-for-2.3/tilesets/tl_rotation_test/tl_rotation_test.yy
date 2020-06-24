@@ -1,0 +1,46 @@
+{
+  "spriteId": {
+    "name": "spr_rotation_test",
+    "path": "sprites/spr_rotation_test/spr_rotation_test.yy",
+  },
+  "tileWidth": 32,
+  "tileHeight": 32,
+  "tilexoff": 16,
+  "tileyoff": 16,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "out_columns": 2,
+  "tile_count": 4,
+  "autoTileSets": [],
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileAnimation": {
+    "FrameData": [
+      0,
+      1,
+      2,
+      3,
+    ],
+    "SerialiseFrameCount": 1,
+  },
+  "macroPageTiles": {
+    "SerialiseWidth": 0,
+    "SerialiseHeight": 0,
+    "TileSerialiseData": [],
+  },
+  "parent": {
+    "name": "GMTiled2 Example",
+    "path": "folders/Tile Sets/GMTiled2 Example.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "tl_rotation_test",
+  "tags": [],
+  "resourceType": "GMTileSet",
+}
