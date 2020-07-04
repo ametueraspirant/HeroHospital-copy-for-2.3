@@ -69,7 +69,7 @@
     {"id":{"name":"animation_end","path":"scripts/animation_end/animation_end.yy",},"order":1,},
     {"id":{"name":"play_animation","path":"scripts/play_animation/play_animation.yy",},"order":2,},
     {"id":{"name":"calc_knockback","path":"scripts/calc_knockback/calc_knockback.yy",},"order":3,},
-    {"id":{"name":"increment_fractions","path":"scripts/increment_fractions/increment_fractions.yy",},"order":0,},
+    {"id":{"name":"increment_fractions","path":"scripts/increment_fractions/increment_fractions.yy",},"order":4,},
     {"id":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},"order":0,},
     {"id":{"name":"obj_game_camera","path":"objects/obj_game_camera/obj_game_camera.yy",},"order":1,},
     {"id":{"name":"obj_entity_parent","path":"objects/obj_entity_parent/obj_entity_parent.yy",},"order":2,},
@@ -157,7 +157,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"example.tmx","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "23.1.1.157",
+    "IDEVersion": "23.1.1.167",
   },
   "resourceVersion": "1.3",
   "name": "HeroHospital-copy-for-2.3",
