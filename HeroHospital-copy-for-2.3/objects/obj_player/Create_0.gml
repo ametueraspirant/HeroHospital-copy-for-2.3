@@ -25,13 +25,16 @@ stamina_current = 200;
 stamina_base = 200;
 jump_power = 15;
 
-// define current speed variables
+spd = new speed_info();
+
+/* define current speed variables
 speed_x = 0;
 speed_y = 0;
 speed_x_saved = 0;
 speed_y_saved = 0;
 speed_x_fraction = 0;
 speed_y_fraction = 0;
+*/
 
 // define current friction variables
 frict = 0;

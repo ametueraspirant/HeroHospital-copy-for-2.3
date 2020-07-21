@@ -1,24 +1,33 @@
-///var_save = increment_fractions()
-///val1 = var_save[0]; val2 = var_save[1];
-function increment_fractions(argument0, argument1, argument2, argument3) {
-	// code courtesy of r/GameMaker discord
-	var x_speed = argument0
-	var y_speed = argument1
-	var x_fraction = argument2
-	var y_fraction = argument3
+/* How 2 Use
+/// In Create Event
+spd = new speed_info(5, 5);
 
-	//Add fractions back
-	x_speed += x_fraction;
-	y_speed += y_fraction;
+/// In Step Event
+spd.update();
+x += spd.x_speed;
+y += spd.y_speed;
 
-	//Store and remove fractions for the next frame, so we're always in an integer position
-	//Int64s don't store fractions, so we're essentially flooring our numbers to remove the fraction, this also caps the value of our speed to 4.something quintrillion.
-	x_fraction =    frac(x_speed);
-	x_speed =        int64(x_speed);
-	y_fraction =    frac(y_speed);
-	y_speed =        int64(y_speed);
+/// Thanks to Zen00 and Sahaun for helping with this code
+*/
 
-	return [x_speed, y_speed, x_fraction, y_fraction];
-
-
+function speed_info() constructor {
+	x_speed = 0;
+	y_speed = 0;
+	x_frac = 0;
+	y_frac = 0;
+	x_save = 0;
+	y_save = 0;
+	
+	static fracture = function() {
+		//Add fractions back
+		x_speed += x_frac;
+		y_speed += y_frac;
+		
+		//Store and remove fractions for the next frame, so we're always in an integer position
+		//Int64s don't store fractions, so we're essentially flooring our numbers to remove the fraction, this also caps the value of our speed to 4.something quintrillion.
+		x_frac = frac(x_speed);
+		x_speed = int64(x_speed);
+		y_frac = frac(y_speed);
+		y_speed = int64(y_speed);
+	}
 }
