@@ -12,76 +12,53 @@ g2l_dash = global.g_key_dash;
 g2l_menu = global.g_key_menu;
 g2l_debug = global.g_key_debug;
 
-// define default stats
-max_speed_h_current = 5;
-max_speed_h_walk = 5;
-max_speed_h_run = 10;
-max_speed_h_sprint = 15;
-max_speed_h_crouch = 4;
-max_speed_v_current = 20;
-max_speed_v_air = 20;
-max_speed_v_wall = 5;
-stamina_current = 200;
-stamina_base = 200;
-jump_power = 15;
+// define stats
+ground = {};
+air = {};
+wall = {};
+ledge = {};
+swim = {};
 
-spd = new speed_info();
+max_h_spd = { walk: 5, run: 10, sprint: 15, crouch: 3 };
+max_v_spd = { air: 20, water: 10, wall: 5 };
+accel = { ground: 1, air: .5, crouch: .8 };
+frict = { ground: .6, air: .4, crouch: .3 };
+grav = { reset: .5, fall: .8, wall: .4 };
+misc = { stam: 200, jump_pow: 15, ledge_id: noone, moved: false, run_dir: 1 };
+draw = { menu: false, debug: false, look_dir: 1, angle: 0, y_offset: 0 };
 
-/* define current speed variables
-speed_x = 0;
-speed_y = 0;
-speed_x_saved = 0;
-speed_y_saved = 0;
-speed_x_fraction = 0;
-speed_y_fraction = 0;
-*/
-
-// define current friction variables
-frict = 0;
-frict_ground = .6;
-frict_air = .4;
-frict_crouch = .3;
-
-// define current acceleration variables
-accel = 0;
-accel_ground = 1;
-accel_air = .5;
-accel_crouch = 0.8;
-
-// define current gravity variables
-grav = 0;
-grav_default = .5;
-grav_fall = .8;
-grav_wall = .4;
+// holds all transient variables for the character
+state = {
+	//stats
+	mhs: max_h_spd.walk,
+	mvs: max_v_spd.air,
+	hs: 0, hsf: 0, hss: 0,
+	vs: 0, vsf: 0, vss: 0,
+	a: accel.ground,
+	f: frict.ground,
+	g: grav.reset,
+	stam: misc.stam,
+	//states
+	won: p_on_where.on_air,
+	lon: p_on_where.on_air,
+	isg: p_is_ground.is_not,
+	isa: p_is_air.is_not,
+	isw: p_is_wall.is_not,
+	isl: p_is_ledge.is_not,
+	iss: p_is_swim.is_not
+};
 
 // define current timers
-t_fall = 0;
-t_coyote = 0;
-t_jump = 0;
-t_duck = 0;
-t_left = 0;
-t_right = 0;
-t_dash = 0;
-t_punch = 0;
-t_kick = 0;
-t_block = 0;
-t_set = 10;
-
-// define current states
-where_on = p_on_where.on_air;
-last_on = p_on_where.on_air;
-is_ground = p_is_ground.is_not;
-is_air = p_is_air.is_not;
-is_wall = p_is_wall.is_not;
-is_ledge = p_is_ledge.is_not;
-is_swim = p_is_swim.is_not;
-
-// define misc variables
-ledge_id = noone;
-has_moved = false;
-menu = false;
-debug = false;
-run_dir = 1;
-look_dir = 1;
-y_offset = 0;
-angle = 0;
+t = {
+	fall: 0,
+	coyote: 0,
+	jump: 0,
+	duck: 0,
+	left: 0,
+	right: 0,
+	dash: 0,
+	punch: 0,
+	kick: 0,
+	block: 0,
+	set: 10
+};

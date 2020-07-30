@@ -7,5 +7,4 @@ function calc_knockback(argument0, argument1) {
 
 	return knockback;
 
-
 }
