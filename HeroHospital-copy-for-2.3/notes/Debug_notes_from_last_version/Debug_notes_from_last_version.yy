@@ -4,7 +4,7 @@
     "path": "folders/Notes.yy",
   },
   "resourceVersion": "1.1",
-  "name": "save old player code",
+  "name": "Debug_notes_from_last_version",
   "tags": [],
   "resourceType": "GMNotes",
 }

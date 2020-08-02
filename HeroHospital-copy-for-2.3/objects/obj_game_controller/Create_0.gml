@@ -19,51 +19,51 @@ global.l_main_layer = "Instances";
 instance_create_layer(0, 0, global.l_main_layer, obj_game_camera);
 
 #region // player enum states
-enum p_on_where {
-	on_ground,
-	on_air,
-	on_wall,
-	on_ledge,
-	on_swim
+enum where {
+	ground,
+	air,
+	wall,
+	ledge,
+	water
 }
 
-enum p_is_ground {
-	is_idle,
-	is_walk,
-	is_run,
-	is_sprint,
-	is_crouch,
-	is_crouch_walk,
-	is_roll,
-	is_slide,
-	is_dash,
-	is_land,
-	is_hard_land,
-	is_not
+enum ground {
+	idle,
+	walk,
+	run,
+	sprint,
+	crouch,
+	sneak,
+	roll,
+	slide,
+	dash,
+	land,
+	hand,
+	isnt
 }
 
-enum p_is_air {
-	is_rise,
-	is_fall,
-	is_not
+enum air {
+	rise,
+	fall,
+	isnt
 }
 
-enum p_is_wall {
-	is_run,
-	is_slide,
-	is_climb,
-	is_jump,
-	is_not
+enum wall {
+	run,
+	slide,
+	climb,
+	jump,
+	isnt
 }
 
-enum p_is_ledge {
-	is_hang,
-	is_climb,
-	is_not
+enum ledge {
+	hang,
+	climb,
+	isnt
 }
 
-enum p_is_swim {
-	is_not
+enum water {
+	isnt
 }
 #endregion
 

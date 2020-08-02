@@ -4,7 +4,7 @@
     "path": "folders/Notes.yy",
   },
   "resourceVersion": "1.1",
-  "name": "Debug notes from last version",
+  "name": "desired_max_speeds_calculation",
   "tags": [],
   "resourceType": "GMNotes",
 }

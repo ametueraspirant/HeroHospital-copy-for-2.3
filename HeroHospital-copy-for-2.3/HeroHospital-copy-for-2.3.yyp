@@ -52,6 +52,7 @@
     {"id":{"name":"spr_use_item","path":"sprites/spr_use_item/spr_use_item.yy",},"order":2,},
     {"id":{"name":"spr_sword_draw","path":"sprites/spr_sword_draw/spr_sword_draw.yy",},"order":3,},
     {"id":{"name":"spr_sword_sheathe","path":"sprites/spr_sword_sheathe/spr_sword_sheathe.yy",},"order":4,},
+    {"id":{"name":"desired_max_speeds_calculation","path":"notes/desired_max_speeds_calculation/desired_max_speeds_calculation.yy",},"order":3,},
     {"id":{"name":"spr_test_ground","path":"sprites/spr_test_ground/spr_test_ground.yy",},"order":0,},
     {"id":{"name":"spr_test_wall","path":"sprites/spr_test_wall/spr_test_wall.yy",},"order":1,},
     {"id":{"name":"spr_test_breakable","path":"sprites/spr_test_breakable/spr_test_breakable.yy",},"order":2,},
@@ -93,8 +94,8 @@
     {"id":{"name":"rm_testing_grounds","path":"rooms/rm_testing_grounds/rm_testing_grounds.yy",},"order":0,},
     {"id":{"name":"rm_example","path":"rooms/rm_example/rm_example.yy",},"order":0,},
     {"id":{"name":"note0","path":"notes/note0/note0.yy",},"order":0,},
-    {"id":{"name":"Debug notes from last version","path":"notes/Debug notes from last version/Debug notes from last version.yy",},"order":1,},
-    {"id":{"name":"save old player code","path":"notes/save old player code/save old player code.yy",},"order":2,},
+    {"id":{"name":"Debug_notes_from_last_version","path":"notes/Debug_notes_from_last_version/Debug_notes_from_last_version.yy",},"order":1,},
+    {"id":{"name":"save_old_player_code","path":"notes/save_old_player_code/save_old_player_code.yy",},"order":2,},
     {"id":{"name":"GMTiled2","path":"extensions/GMTiled2/GMTiled2.yy",},"order":0,},
   ],
   "Options": [
