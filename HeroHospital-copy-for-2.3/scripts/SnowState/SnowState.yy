@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "entity",
-    "path": "folders/Scripts/entity.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "entity_controller",
+  "name": "SnowState",
   "tags": [],
   "resourceType": "GMScript",
 }

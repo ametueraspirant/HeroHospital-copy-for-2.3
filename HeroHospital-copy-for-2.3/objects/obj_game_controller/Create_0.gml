@@ -18,68 +18,12 @@ global.l_main_layer = "Instances";
 // create the camera object
 instance_create_layer(0, 0, global.l_main_layer, obj_game_camera);
 
-#region // player enum states
-enum where {
-	ground,
-	air,
-	wall,
-	ledge,
-	water
-}
-
-enum ground {
-	idle,
-	walk,
-	run,
-	sprint,
-	crouch,
-	sneak,
-	roll,
-	slide,
-	dash,
-	land,
-	hand,
-	isnt
-}
-
-enum air {
-	rise,
-	fall,
-	isnt
-}
-
-enum wall {
-	run,
-	slide,
-	climb,
-	jump,
-	isnt
-}
-
-enum ledge {
-	hang,
-	climb,
-	isnt
-}
-
-enum water {
-	isnt
-}
-#endregion
-
-#region // mob enum states
-
-#endregion
-
-#region //misc enum states
+// camera enum
 enum g_camera_state {
 	c_player,
 	c_action,
 	c_cutscene
 }
-#endregion
-
-
 
 // randomise
 randomise();
