@@ -1,7 +1,6 @@
 {
   "bboxMode": 0,
   "collisionKind": 0,
-  "separateMasks": true,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -68,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3fe645b2-a61c-4d24-a579-75197756db8d","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "test",
     "path": "folders/Sprites/terrain/test.yy",

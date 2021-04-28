@@ -39,7 +39,7 @@ s_jump = {  };
 
 // ledge states
 s_ledge = { a: 0, f: 0, g: 0, mhs: 0, mvs: 0 };
-s_swim = { a: .5, f: .2 g: .2, mhs: 5, mvs: 5 }; 
+s_swim = { a: .5, f: .2, g: .2, mhs: 5, mvs: 5 }; 
 
 // math out these max speeds for friction * speed so it caps at about the same amount.
 // max_h_spd = { walk: 5, run: 10, sprint: 15, crouch: 3 };
